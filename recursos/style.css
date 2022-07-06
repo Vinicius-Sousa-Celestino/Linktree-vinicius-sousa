@@ -1,0 +1,136 @@
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    /* background: radial-gradient(circle, rgba(191,191,191,1) 35%, rgba(91,136,131,1) 100%); */
+    font-family: ubuntu;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --bg-color: rgb(191,191,191);
+    --text-color: #000;
+    --primary-color: #5b8883;
+    --primary-color-dark: #48746e;
+}
+
+body.green{
+    --bg-color: radial-gradient(circle, rgba(191,191,191,1) 35%, rgba(91,136,131,1) 100%);
+    --text-color: #00082F
+}
+
+body.white{
+    --bg-color: #E5E5E5;
+    --text-color: #00082F;
+}
+
+body.pink{
+    --bg-color: #E5E5E5;
+    --text-color: #00082F;
+    --primary-color: #D6336C;
+    --primary-color-dark: #A61E4D;
+}
+
+.container{
+    /* border: 3px red solid; */
+    text-align: center; /* centraliza todos os elementos dentro da div */
+    width: 300px;
+    margin: 60px auto;
+    padding: 0px 40px;
+}
+
+img.foto{
+    border: var(--primary-color) 4px solid;
+    width: 100%; /* 100% significa que ela irá ser sempre relativo ao tamanho da caixa em que ela está, ou seja, preencher toda a caixa */
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    padding: 3.7px;
+}
+
+ul{
+    list-style: none;
+    margin: 48px 0;
+    margin-top: 30px;
+    /* border: 3px red solid; */
+}
+
+ul li a{ /*pegando o link */
+    /* border: 3px red solid; */
+    height: 53px;
+    display: flex; /* Destravar as divs */
+    align-items: center;
+    /* justify-content: center; */
+    background: var(--primary-color);
+    margin-top: 16px;
+    border-radius: 4px 16px;
+    color: black;
+    padding-left: 32%;
+    transition: all .5s;
+    border: 2px solid transparent;
+}
+
+ul li a:hover{
+    background: var(--primary-color-dark);
+    transition: background 400ms;
+
+    border: 3px solid #29413d;
+    /* border-radius: 50%; */
+}
+
+h1{
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+p.tag{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+footer{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 10px;
+    opacity: 0.8;
+    color: var(--text-color);
+}
+
+footer:hover{
+    opacity: 1;
+    transition: opacity 400ms;
+}
+
+a{
+    text-decoration: none;
+    color:#bd0bea;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    opacity: 50%;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+
+
+
+
