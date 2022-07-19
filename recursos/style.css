@@ -50,6 +50,8 @@ img.foto{
     width: 130px;
     height: 130px;
     padding: 3.7px;
+    object-fit: cover;
+    background-color: rgb(150, 167, 165);
 }
 
 ul{
